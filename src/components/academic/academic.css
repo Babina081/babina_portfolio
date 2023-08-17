@@ -1,0 +1,35 @@
+.a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.bar {
+  background-color: var(--color-primary);
+  width: 5rem;
+  height: 0.2rem;
+}
+
+/* .vertical__timeline {
+  line-height: 2rem;
+  border: 1px solid transparent;
+  border-radius: 4rem;
+} */
+
+.vertical-timeline-element--education {
+  color: var(--color-primary);
+  /* border: 1px solid var(--color-primary); */
+}
+
+.academic__timeline-icon {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+h5,
+h2,
+h6,
+p {
+  color: var(--color-primary);
+}
