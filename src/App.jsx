@@ -21,6 +21,7 @@ const App = () => {
       style={{
         backgroundColor: darkMode ? '' : '#F3FDE8',
         color: darkMode && 'white',
+        width: '100%',
       }}
     >
       <Toggle></Toggle>

@@ -48,7 +48,7 @@ body {
 .container {
   width: var(--container-width-lg);
   margin-inline: auto;
-  max-width: 1920px;
+  max-width: 100%;
 }
 
 h1,
@@ -133,6 +133,10 @@ img {
 }
 /* media queries(small devices) */
 @media screen and (max-width: 600px) {
+  body {
+    width: 100vh;
+  }
+
   .container {
     width: var(--container-width-sm);
   }
