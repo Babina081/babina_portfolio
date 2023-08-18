@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import './about.css';
 import me from '../../assets/prof.jpeg';
 import { ThemeContext } from '../../context';
+
+import { PiCaretDoubleDownBold } from 'react-icons/pi';
 // import { FaAward } from 'react-icons/fa';
 // import { FiUsers } from 'react-icons/fi';
 // import { VscFolderLibrary } from 'react-icons/vsc';

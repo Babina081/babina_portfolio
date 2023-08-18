@@ -1,6 +1,7 @@
 import React from 'react';
 import './experience.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
+import { PiCaretDoubleDownBold } from 'react-icons/pi';
 
 const Experience = () => {
   return (
@@ -104,10 +105,10 @@ const Experience = () => {
                   <BsPatchCheckFill classname="experience__details-icon" /> Node
                   JS
                 </p>
-                <small className="text-light">90%</small>
+                <small className="text-light">20%</small>
               </div>
-              <div className="progress-line" data-percent="90%">
-                <span style={{ width: '90%' }}></span>
+              <div className="progress-line" data-percent="20%">
+                <span style={{ width: '20%' }}></span>
               </div>
             </article>
             <article className="experience__details">
@@ -116,10 +117,10 @@ const Experience = () => {
                   <BsPatchCheckFill classname="experience__details-icon" />{' '}
                   MongoDB
                 </p>
-                <small className="text-light">90%</small>
+                <small className="text-light">20%</small>
               </div>
-              <div className="progress-line" data-percent="90%">
-                <span style={{ width: '90%' }}></span>
+              <div className="progress-line" data-percent="20%">
+                <span style={{ width: '20%' }}></span>
               </div>
             </article>
             <article className="experience__details">
@@ -127,22 +128,22 @@ const Experience = () => {
                 <p>
                   <BsPatchCheckFill classname="experience__details-icon" /> PHP
                 </p>
-                <small className="text-light">60%</small>
+                <small className="text-light">40%</small>
               </div>
-              <div className="progress-line" data-percent="60%">
-                <span style={{ width: '60%' }}></span>
+              <div className="progress-line" data-percent="40%">
+                <span style={{ width: '40%' }}></span>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
                   <BsPatchCheckFill classname="experience__details-icon" />{' '}
-                  MySQL
+                  ExpressJS
                 </p>
-                <small className="text-light">50%</small>
+                <small className="text-light">30%</small>
               </div>
-              <div className="progress-line" data-percent="50%">
-                <span style={{ width: '50%' }}></span>
+              <div className="progress-line" data-percent="30%">
+                <span style={{ width: '30%' }}></span>
               </div>
             </article>
           </div>

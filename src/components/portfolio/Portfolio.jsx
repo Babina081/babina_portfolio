@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './portfolio.css';
 
 import Language from './language.jsx';
 import IMG1 from '../../assets/project2.png';
+import { ThemeContext } from '../../context';
+import { FiGithub } from 'react-icons/fi';
+import { FaRegPlayCircle } from 'react-icons/fa';
+// core version + navigation, pagination modules:
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel, Pagination } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { PiCaretDoubleDownBold } from 'react-icons/pi';
 
 const data = [
   {
@@ -10,11 +20,11 @@ const data = [
     image: IMG1,
     title: 'FOOD CLUB (TASTE THE BEST)',
     description:
-      'This project marks my first step into college assignments. I created a basic localhost website with two parts: one for admins and another for users. This design lets administrators manage things, while users get to use the site. I put a lot of care into making sure both sides work well. This project demonstrates my starting skills and how much I care about making websites that are easy to use and serve their purpose.',
+      'This project marks my first step into college assignments. I created a basic localhost website with two parts: one for admins and another for users. ',
     github: 'www.github.com',
     demo: 'www.google.com',
   },
-{
+  {
     id: 2,
     image: IMG1,
     title: 'asaja',
@@ -29,31 +39,11 @@ const data = [
     github: 'www.github.com',
     demo: 'www.google.com',
   },
-  // {
-  //   id: 4,
-  //   image: IMG1,
-  //   title: 'adda',
-  //   github: 'www.github.com',
-  //   demo: 'www.google.com',
-  // },
-  // {
-  //   id: 5,
-  //   image: IMG1,
-  //   title: 'adda',
-  //   github: 'www.github.com',
-  //   demo: 'www.google.com',
-  // },
-  // {
-  //   id: 6,
-  //   image: IMG1,
-  //   title: 'adda',
-  //   github: 'www.github.com',
-  //   demo: 'www.google.com',
-  // },
 ];
 
-
 const Portfolio = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <section id="portfolio">
       <div className="a">
@@ -62,28 +52,43 @@ const Portfolio = () => {
         <div className="bar"></div>
       </div>
 
-      {data.map(({ id, image, title, description, github, demo }) => {
-        return (
-          <div className="container portfolio__container">
-            <img src={image} className="portfolio__item-image" alt={title} />
-
-            <div className="portfolio__group2">
-              <h2>{title}</h2>
-              <p className="portfolio__desc">{description}</p>
-              <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
-                  Github
-                </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
-                  Live Demo
-                </a>
+      {/* <Swiper
+        className="container whole_group"
+        direction={'vertical'}
+        slidesPerView={1}
+        spaceBetween={30}
+        mousewheel={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel, Pagination]}
+      > */}
+      <div className=" container whole_group">
+        {data.map(({ image, title, description, github, demo }, index) => {
+          return (
+            <div key={index} className="portfolio__container">
+              <div className="portfolio__group1">
+                <img src={image} alt="" />
               </div>
-              <h2>Programming Language used</h2>
-              <Language></Language>
+              <div className="portfolio__group2">
+                <h3 style={{ color: 'var(--color-primary)' }}>{title}</h3>
+                <p>{description}</p>
+                <h3 style={{ color: 'var(--color-primary)' }}>Tools Used</h3>
+                <Language></Language>
+
+                <div className="portfolio__item-cta">
+                  <a href={github} className="btn" target="_blank">
+                    Github <FiGithub />
+                  </a>
+                  <a href={demo} className="btn btn-primary" target="_blank">
+                    Live Demo <FaRegPlayCircle />
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 };

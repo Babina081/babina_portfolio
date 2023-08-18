@@ -42,10 +42,9 @@ const Testimonials = () => {
   return (
     <section id="testimonials">
       <div className="a">
-
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
-      <div className="bar"></div>
+        <h5>Review from clients</h5>
+        <h2>Testimonials</h2>
+        <div className="bar"></div>
       </div>
       <Swiper
         className="container testimonials__container"
