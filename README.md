@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- ------------------My overview-------------------------- -->
+
+This is my portfolio.
+=> I have used React library
+=> I have used html and css
+=> I learnt about usage of components like -- swiper, emailjs, progress bar, toggle(darkmode), type animation, react-icons, vertical-timeline
+=> I also learnt about useState and applications of props
+=> I also used reducer and contextTheme
+=> Mainly I learnt abou design and its implenetation using react libraries
+
+<!-- ------------------------------------------------------- -->
