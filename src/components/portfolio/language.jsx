@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Language = (props) => {
-  const {langauges}=props;
+ 
   return (
     <div className="language__info">
        {props.languages.map((language, index) => (

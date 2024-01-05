@@ -3,7 +3,7 @@ import './toggle.css';
 import sun from '../../assets/sun.jpg';
 import moon from '../../assets/moon.png';
 import { ThemeContext } from '../../context';
-import { FiToggleLeft, FiToggleRight } from 'react-icons/fi';
+// import { FiToggleLeft, FiToggleRight } from 'react-icons/fi';
 
 const Toggle = () => {
   const theme = useContext(ThemeContext);

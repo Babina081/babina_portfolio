@@ -3,7 +3,7 @@ import { FaRegPlayCircle } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
 import Language from './Language'
 
-const Project_List = (props) => {
+const ProjectList = (props) => {
   return (
     <div key={props.id} className="portfolio__container">
     <div className="portfolio__group1">
@@ -13,7 +13,7 @@ const Project_List = (props) => {
       <h3 style={{ color: 'var(--color-primary)' }}>{props.title}</h3>
       <p>{props.description}</p>
       <h3 style={{ color: 'var(--color-primary)' }}>Tools Used</h3>
-      <Language languages={props.languages}></Language>
+      <Language languages={props.languages}/>
       {/* <ul>
       {props.languages.map((language, index) => (
         <li key={index}>{language}</li>
@@ -21,10 +21,10 @@ const Project_List = (props) => {
     </ul> */}
 
       <div className="portfolio__item-cta">
-        <a href={props.gitpage} className="btn" target="_blank">
+        <a href={props.gitpage} className="btn" target="blank">
           Github <FiGithub />
         </a>
-        <a href={props.demo} className="btn btn-primary" target="_blank">
+        <a href={props.demo} className="btn btn-primary" target="blank">
           Live Demo <FaRegPlayCircle />
         </a>
       </div>
@@ -33,4 +33,4 @@ const Project_List = (props) => {
   )
 }
 
-export default Project_List
+export default ProjectList

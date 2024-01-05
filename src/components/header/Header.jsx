@@ -5,7 +5,7 @@ import CTA from './CTA';
 import HeaderSocial from './HeaderSocials';
 import { BsMouse2 } from 'react-icons/bs';
 import { ThemeContext } from '../../context';
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 import { TypeAnimation } from 'react-type-animation';
 
 const Header = () => {

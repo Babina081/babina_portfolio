@@ -5,7 +5,7 @@ import App from './App';
 import { ThemeProvider } from './context';
 
 ReactDOM.render(
-  <ThemeProvider>
+  <ThemeProvider >
     <App />
   </ThemeProvider>,
   document.getElementById('root')

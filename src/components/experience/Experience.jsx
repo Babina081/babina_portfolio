@@ -1,9 +1,9 @@
 import React from 'react';
 import './experience.css';
-import { BsPatchCheckFill } from 'react-icons/bs';
-import { PiCaretDoubleDownBold } from 'react-icons/pi';
+// import { BsPatchCheckFill } from 'react-icons/bs';
+// import { PiCaretDoubleDownBold } from 'react-icons/pi';
 import {skills,backend_skills} from '../../skills';
-import Experience_list from './Experience_list';
+import ExperienceList from './Experience_list';
 
 
 const Experience = () => {
@@ -24,7 +24,7 @@ const Experience = () => {
           <div className="experience__content">
 
 {skills.map((list)=>{
-  return < Experience_list key={list.id} name={list.name} skill={list.skill}/>
+  return < ExperienceList key={list.id} name={list.name} skill={list.skill}/>
 })}
             {/* <article className="experience__details">
               <div className="experience__detail">
@@ -107,7 +107,7 @@ const Experience = () => {
           </div>
           <div className="experience__content">
             {backend_skills.map((list=>{
-             return < Experience_list key={list.id} name={list.name} skill={list.skill}/>
+             return < ExperienceList key={list.id} name={list.name} skill={list.skill}/>
             }))}
             {/* <article className="experience__details">
               <div className="experience__detail">

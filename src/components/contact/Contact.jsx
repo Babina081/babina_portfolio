@@ -1,6 +1,6 @@
 import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
-import { GrMap } from 'react-icons/gr';
+// import { GrMap } from 'react-icons/gr';
 
 import { BsWhatsapp, BsPinMap } from 'react-icons/bs';
 import React, { useRef } from 'react';
@@ -35,7 +35,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>babitamoo333@gmail.com</h5>
-            <a href="mailto:babitamoo333@gmail.com" target="_blank">
+            <a href="mailto:babitamoo333@gmail.com" target="blank">
               Write Me <TiArrowRightOutline />
             </a>
           </article>
@@ -50,7 +50,7 @@ const Contact = () => {
             <h5>+977 9812345678</h5>
             <a
               href="https://api.whatsapp.com/send?phone+9779846842387"
-              target="_blank"
+              target="blank"
             >
               Write Me <TiArrowRightOutline />
             </a>

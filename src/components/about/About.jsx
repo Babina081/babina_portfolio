@@ -3,7 +3,7 @@ import './about.css';
 import me from '../../assets/prof.jpeg';
 import { ThemeContext } from '../../context';
 
-import { PiCaretDoubleDownBold } from 'react-icons/pi';
+// import { PiCaretDoubleDownBold } from 'react-icons/pi';
 // import { FaAward } from 'react-icons/fa';
 // import { FiUsers } from 'react-icons/fi';
 // import { VscFolderLibrary } from 'react-icons/vsc';
@@ -21,7 +21,7 @@ const About = () => {
 
       <div className="container about__container">
         <div className="about__me">
-          <img src={me} alt="About Image" className="about__me-image" />
+          <img src={me} alt="About Me" className="about__me-image" />
         </div>
         <div className="about__content">
           {/* <div className="about__cards">

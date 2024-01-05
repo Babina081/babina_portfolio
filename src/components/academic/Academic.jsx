@@ -7,7 +7,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import { FaGraduationCap } from 'react-icons/fa';
 import { ImLocation2 } from 'react-icons/im';
-import { PiCaretDoubleDownBold } from 'react-icons/pi';
+// import { PiCaretDoubleDownBold } from 'react-icons/pi';
 
 const data = [
   {

@@ -1,18 +1,18 @@
 import React from 'react';
 import './footer.css';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaGithub } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
-import { IoLogoTwitter } from 'react-icons/io';
+import { BsLinkedin } from 'react-icons/bs';
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer__logo">
+      <a href="/" className="footer__logo">
         Babina Gurung
       </a>
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -38,12 +38,21 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/">
+        <a href="https://www.facebook.com/" target='blank'>
           <FaFacebookF />
         </a>
-        <a href="https://www.instagram.com/gurung.babina/">
+        <a href="https://www.instagram.com/gurung.babina/" target='blank'>
           <FiInstagram />
         </a>
+        <a
+        href="https://www.linkedin.com/in/babina-gurung-8303631b8/"
+        target="blank"
+      >
+        <BsLinkedin />
+      </a>
+      <a href="https://github.com/Babina081" target="blank">
+        <FaGithub />
+      </a>
       </div>
 
       <div className="footer__copyright">

@@ -2,7 +2,7 @@ import React from 'react'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import './experience.css';
 
-const Experience_list=(props)=> {
+const ExperienceList=(props)=> {
   return (
     <article className="experience__details">
     <div className="experience__detail">
@@ -18,4 +18,4 @@ const Experience_list=(props)=> {
   )
 }
 
-export default Experience_list
+export default ExperienceList
