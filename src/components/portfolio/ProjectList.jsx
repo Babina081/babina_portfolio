@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaRegPlayCircle } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
-import Language from './Language'
+import Languages from './Languages'
+
 
 const ProjectList = (props) => {
   return (
@@ -13,7 +14,7 @@ const ProjectList = (props) => {
       <h3 style={{ color: 'var(--color-primary)' }}>{props.title}</h3>
       <p>{props.description}</p>
       <h3 style={{ color: 'var(--color-primary)' }}>Tools Used</h3>
-      <Language languages={props.languages}/>
+      <Languages languages={props.languages}/>
       {/* <ul>
       {props.languages.map((language, index) => (
         <li key={index}>{language}</li>
