@@ -2,6 +2,9 @@ import React from 'react';
 import './experience.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
 import { PiCaretDoubleDownBold } from 'react-icons/pi';
+import {skills,backend_skills} from '../../skills';
+import Experience_list from './Experience_list';
+
 
 const Experience = () => {
   return (
@@ -19,7 +22,11 @@ const Experience = () => {
             <div className="bar"></div>
           </div>
           <div className="experience__content">
-            <article className="experience__details">
+
+{skills.map((list)=>{
+  return < Experience_list key={list.id} name={list.name} skill={list.skill}/>
+})}
+            {/* <article className="experience__details">
               <div className="experience__detail">
                 <p>
                   <BsPatchCheckFill classname="experience__details-icon" /> HTML
@@ -88,7 +95,7 @@ const Experience = () => {
               <div className="progress-line" data-percent="70%">
                 <span style={{ width: '70%' }}></span>
               </div>
-            </article>
+            </article> */}
           </div>
         </div>
         {/* end of frontend */}
@@ -99,7 +106,10 @@ const Experience = () => {
             <div className="bar"></div>
           </div>
           <div className="experience__content">
-            <article className="experience__details">
+            {backend_skills.map((list=>{
+             return < Experience_list key={list.id} name={list.name} skill={list.skill}/>
+            }))}
+            {/* <article className="experience__details">
               <div className="experience__detail">
                 <p>
                   <BsPatchCheckFill classname="experience__details-icon" /> Node
@@ -145,7 +155,7 @@ const Experience = () => {
               <div className="progress-line" data-percent="30%">
                 <span style={{ width: '30%' }}></span>
               </div>
-            </article>
+            </article> */}
           </div>
         </div>
         {/* end of backend */}

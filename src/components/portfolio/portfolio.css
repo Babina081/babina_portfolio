@@ -116,20 +116,33 @@
   height: 100vh;
 }
 
-.portfolio__container img {
-  height: 500px;
 
-  border-radius: 1rem;
-}
 
 .portfolio__group1 {
-  flex: 1;
+  flex: 1; /* Take up available space */
+  max-width: 50%;
 }
+
+
+
+.portfolio__group1 img {
+  width: 100%; /* Make the image fill the container width */
+  height: 100%; /* Maintain the aspect ratio */
+  border-radius: 1rem; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  max-height: 100%; /* Ensure the image doesn't exceed its original size */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
 
 .portfolio__group2 {
   flex: 1;
-
-  margin-top: 2rem;
+  max-width: 50%; /* Limit the maximum width to 50% of the container */
+}
+.portfolio__group2 h3 {
+  font-weight: bold;
+  color: var(--color-bg-variant);
 }
 
 .portfolio__group2 p {
@@ -149,7 +162,7 @@
 
 .language__info {
   display: grid;
-  grid-template-columns: repeat(3, 140px);
+  grid-template-columns: repeat(4, 140px);
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -170,7 +183,7 @@
   background: var(--color-primary);
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .whole_group {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
@@ -199,5 +212,56 @@
     background-color: white;
     color: var(--color-primary);
     border-radius: 5rem;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .whole_group {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__container {
+    padding: 1rem;
+  }
+
+  .language__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+/* Media Query for Small Devices */
+@media screen and (max-width: 768px) {
+  .whole_group {
+    flex-direction: column;
+  }
+  .portfolio__container {
+    flex-direction: column;
+    
+    align-items: center; /* Center items horizontally */
+    padding: 0.5rem; /* Reduced padding */
+    margin: 0.5rem; /* Optional: Add margin for spacing */
+    max-width: 100%; /* Allow container to take full width */
+    height: auto;
+    flex: 1;
+  }
+
+  .portfolio__group1,
+  .portfolio__group2 {
+    max-width: 100%;
+  }
+  
+  .portfolio__container img {
+    height: auto;
+  }
+
+  .language__box {
+    border-radius: 1rem; /* Adjust the border-radius for language boxes */
+    max-width: 100%; /* Allow the language box to take full width */
+  }
+
+  .language__info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 }

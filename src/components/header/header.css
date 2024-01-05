@@ -62,6 +62,8 @@ header {
   border-radius: 2rem;
   margin: 2rem;
   padding: 1rem;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
 }
 
 .scroll__down:hover {
@@ -70,7 +72,22 @@ header {
   border: none;
   transform: rotate(0deg);
   transition: var(--transition);
+ 
 }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
 
 /* media queries (medium devices) */
 @media screen and (max-width: 1024px) {
@@ -98,7 +115,8 @@ header {
   header {
     height: 100vh;
   }
-
+  
+ 
   .type_animation {
     font-size: 1rem;
     flex-wrap: wrap;
@@ -108,4 +126,6 @@ header {
   .scroll__down {
     display: none;
   }
-}
+
+  
+  }

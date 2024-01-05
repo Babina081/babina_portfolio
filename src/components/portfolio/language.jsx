@@ -1,12 +1,17 @@
 import React from 'react';
 
-const language = () => {
+const Language = (props) => {
+  const {langauges}=props;
   return (
     <div className="language__info">
-      <div className="language__box">
-        <h3 className="language__title">React</h3>
+       {props.languages.map((language, index) => (
+        <div className="language__box" key={index}>
+          <h3 className="language__title">{language}</h3>
+        </div>
+      ))}
       </div>
-      <div className="language__box">
+    
+    /* <div className="language__box">
         <h3 className="language__title">PHP</h3>
       </div>
       <div className="language__box">
@@ -17,9 +22,9 @@ const language = () => {
       </div>
       <div className="language__box">
         <h3 className="language__title">Nodejs</h3>
-      </div>
-    </div>
+      </div> */
+   
   );
 };
 
-export default language;
+export default Language;

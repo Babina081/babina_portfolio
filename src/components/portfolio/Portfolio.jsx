@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './portfolio.css';
 
-import Language from './language.jsx';
+import Language from './Language.jsx';
 import IMG1 from '../../assets/project2.png';
 import { ThemeContext } from '../../context';
 import { FiGithub } from 'react-icons/fi';
@@ -13,6 +13,8 @@ import { Mousewheel, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { PiCaretDoubleDownBold } from 'react-icons/pi';
+import Project_List from './Project_List.jsx';
+import projects from '../../projects.js';
 
 const data = [
   {
@@ -64,28 +66,17 @@ const Portfolio = () => {
         modules={[Mousewheel, Pagination]}
       > */}
       <div className=" container whole_group">
-        {data.map(({ image, title, description, github, demo }, index) => {
+        {projects.map((list ) => {
           return (
-            <div key={index} className="portfolio__container">
-              <div className="portfolio__group1">
-                <img src={image} alt="" />
-              </div>
-              <div className="portfolio__group2">
-                <h3 style={{ color: 'var(--color-primary)' }}>{title}</h3>
-                <p>{description}</p>
-                <h3 style={{ color: 'var(--color-primary)' }}>Tools Used</h3>
-                <Language></Language>
-
-                <div className="portfolio__item-cta">
-                  <a href={github} className="btn" target="_blank">
-                    Github <FiGithub />
-                  </a>
-                  <a href={demo} className="btn btn-primary" target="_blank">
-                    Live Demo <FaRegPlayCircle />
-                  </a>
-                </div>
-              </div>
-            </div>
+          <Project_List 
+          key={list.id}
+          title={list.title}
+          description={list.description}
+          img={list.img}
+          languages={list.languages}
+          gitpage={list.gitpage}
+          demo={list.demo}
+          />
           );
         })}
       </div>
