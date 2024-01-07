@@ -113,17 +113,13 @@
   padding: 2rem;
   border-radius: 2rem;
   user-select: none;
-  height: 100vh;
+  height: 50vh;
 }
-
-
 
 .portfolio__group1 {
   flex: 1; /* Take up available space */
   max-width: 50%;
 }
-
-
 
 .portfolio__group1 img {
   width: 100%; /* Make the image fill the container width */
@@ -134,7 +130,6 @@
   max-height: 100%; /* Ensure the image doesn't exceed its original size */
   object-fit: cover; /* Maintain aspect ratio while covering the container */
 }
-
 
 .portfolio__group2 {
   flex: 1;
@@ -236,7 +231,7 @@
   }
   .portfolio__container {
     flex-direction: column;
-    
+
     align-items: center; /* Center items horizontally */
     padding: 0.5rem; /* Reduced padding */
     margin: 0.5rem; /* Optional: Add margin for spacing */
@@ -249,7 +244,7 @@
   .portfolio__group2 {
     max-width: 100%;
   }
-  
+
   .portfolio__container img {
     height: auto;
   }
