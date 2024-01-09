@@ -1,6 +1,7 @@
 import diceGameImage from "./components/dicegame.png";
 import weatherAppImage from "./components/weatheapp.png";
 import noteKeeperApp from "./components/noteKeeperApp.png";
+import contactApp from "./components/contactApp.png";
 
 const projects = [
   {
@@ -31,10 +32,23 @@ const projects = [
     gitpage: "https://github.com/Babina081/note-keeper-react-project",
     demo: "https://babina081.github.io/note-keeper-react-project/",
   },
-  // {
-  //     id:4,title:'ABC',description:'askaskajsakjsajksakjsajksssknxknasaksjaksjakjsaksj',img:'/',languages:["React","aksjaks"
-  //     ,"nodejs","html",'css'],gitpage:'abc',demo:'abc'
-  // },
+  {
+    id: 4,
+    title: "Contact Manager",
+    description:
+      "The Contact Manager project is a comprehensive application designed to streamline and organize the management of personal and professional contacts. It serves as a centralized hub for storing, retrieving, and updating contact information, providing users with a user-friendly interface to efficiently manage their network.",
+    img: contactApp,
+    languages: [
+      "React",
+      "Hooks",
+      "JSX",
+      "API",
+      "Semantic UI",
+      "States & Props",
+    ],
+    gitpage: "https://github.com/Babina081/react-contact-manager.git",
+    demo: "https://babina081.github.io/react-contact-manager/",
+  },
 ];
 
 export default projects;
