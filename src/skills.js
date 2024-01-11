@@ -17,7 +17,7 @@ const skills=[
     {
     id:4,
     name:"Bootstrap",
-    skill:70
+    skill:60
 },
     {
     id:5,
@@ -37,7 +37,7 @@ const skills=[
     {
     id:8,
     name:"EJS",
-    skill:50
+    skill:60
 },
    
 ]
@@ -55,7 +55,7 @@ const backend_skills=[    {
     {
     id:3,
     name:"ExpressJs",
-    skill:70
+    skill:60
 },
     {
     id:4,

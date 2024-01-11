@@ -19,7 +19,7 @@ const projects = [
     title: "Weather App",
     description: `The Weather App is a simple and responsive web application built using HTML, CSS, and JavaScript. It provides users with real-time weather information for a specified location by leveraging a weather API. The user interface is clean and user-friendly, allowing users to easily check the current weather conditions, temperature, and other relevant details. Users can input a city name or choose their current location to receive accurate and up-to-date weather updates. The project demonstrates my skills in front-end development, including DOM manipulation, asynchronous JavaScript (fetching data from an API), and creating an engaging user experience. The app's responsive design ensures a seamless experience across various devices. Explore the live demo to see the Weather App in action and stay informed about the weather in your favorite locations!`,
     img: weatherAppImage,
-    languages: ["HTML", "CSS", "Javascript"],
+    languages: ["HTML", "CSS", "Javascript", "API"],
     gitpage: "https://github.com/Babina081/weatherApp",
     demo: "https://babina081.github.io/weatherApp/",
   },

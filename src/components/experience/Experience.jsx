@@ -1,10 +1,9 @@
-import React from 'react';
-import './experience.css';
+import React from "react";
+import "./experience.css";
 // import { BsPatchCheckFill } from 'react-icons/bs';
 // import { PiCaretDoubleDownBold } from 'react-icons/pi';
-import {skills,backend_skills} from '../../skills';
-import ExperienceList from './Experience_list';
-
+import { skills, backend_skills } from "../../skills";
+import ExperienceList from "./Experience_list";
 
 const Experience = () => {
   return (
@@ -18,14 +17,19 @@ const Experience = () => {
       <div className="container experience__container">
         <div className="experience__frontend">
           <div className="a">
-            <h3>Frontend Developer</h3>
+            <h3>Frontend</h3>
             <div className="bar"></div>
           </div>
           <div className="experience__content">
-
-{skills.map((list)=>{
-  return < ExperienceList key={list.id} name={list.name} skill={list.skill}/>
-})}
+            {skills.map((list) => {
+              return (
+                <ExperienceList
+                  key={list.id}
+                  name={list.name}
+                  skill={list.skill}
+                />
+              );
+            })}
             {/* <article className="experience__details">
               <div className="experience__detail">
                 <p>
@@ -102,13 +106,19 @@ const Experience = () => {
 
         <div className="experience__backend">
           <div className="a">
-            <h3>Backend Developer</h3>
+            <h3>Backend</h3>
             <div className="bar"></div>
           </div>
           <div className="experience__content">
-            {backend_skills.map((list=>{
-             return < ExperienceList key={list.id} name={list.name} skill={list.skill}/>
-            }))}
+            {backend_skills.map((list) => {
+              return (
+                <ExperienceList
+                  key={list.id}
+                  name={list.name}
+                  skill={list.skill}
+                />
+              );
+            })}
             {/* <article className="experience__details">
               <div className="experience__detail">
                 <p>
