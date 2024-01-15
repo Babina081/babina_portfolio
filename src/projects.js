@@ -2,6 +2,7 @@ import diceGameImage from "./components/dicegame.png";
 import weatherAppImage from "./components/weatheapp.png";
 import noteKeeperApp from "./components/noteKeeperApp.png";
 import contactApp from "./components/contactApp.png";
+import cryptoapp from "./components/cryptoapp.png";
 
 const projects = [
   {
@@ -34,6 +35,23 @@ const projects = [
   },
   {
     id: 4,
+    title: "Crypto App",
+    description:
+      "Introducing my crypto app, a dynamic platform offering a comprehensive view of various cryptocurrencies. Explore detailed information on each crypto, accompanied by interactive charts that reflect their performance over customizable time periods. This user-friendly application is tailored for crypto enthusiasts and investors, providing a seamless experience for staying informed and making data-driven decisions.",
+    img: cryptoapp,
+    languages: [
+      "React",
+      "Hooks",
+      "JSX",
+      "API",
+      "Semantic UI",
+      "States & Props",
+    ],
+    gitpage: "https://github.com/Babina081/cryptocurrency-api-react-project",
+    demo: "https://crypto-app-101.netlify.app/",
+  },
+  {
+    id: 5,
     title: "Contact Manager",
     description:
       "The Contact Manager project is a comprehensive application designed to streamline and organize the management of personal and professional contacts. It serves as a centralized hub for storing, retrieving, and updating contact information, providing users with a user-friendly interface to efficiently manage their network.",
