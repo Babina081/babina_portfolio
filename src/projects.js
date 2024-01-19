@@ -39,14 +39,7 @@ const projects = [
     description:
       "Introducing my crypto app, a dynamic platform offering a comprehensive view of various cryptocurrencies. Explore detailed information on each crypto, accompanied by interactive charts that reflect their performance over customizable time periods. This user-friendly application is tailored for crypto enthusiasts and investors, providing a seamless experience for staying informed and making data-driven decisions.",
     img: cryptoapp,
-    languages: [
-      "React",
-      "Hooks",
-      "JSX",
-      "API",
-      "Semantic UI",
-      "States & Props",
-    ],
+    languages: ["React", "Hooks", "chart.js", "API", "Redux", "ant design"],
     gitpage: "https://github.com/Babina081/cryptocurrency-api-react-project",
     demo: "https://crypto-app-101.netlify.app/",
   },
