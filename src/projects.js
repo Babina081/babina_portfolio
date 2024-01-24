@@ -3,6 +3,7 @@ import weatherAppImage from "./components/weatheapp.png";
 import noteKeeperApp from "./components/noteKeeperApp.png";
 import contactApp from "./components/contactApp.png";
 import cryptoapp from "./components/cryptoapp.png";
+import todo from "./components/todo.png";
 
 const projects = [
   {
@@ -45,6 +46,26 @@ const projects = [
   },
   {
     id: 5,
+    title: "TODO App",
+    description:
+      "Explore my Todo App project, a straightforward demonstration of my web development skills. This application allows users to seamlessly add, edit, and delete tasks, showcasing my proficiency in creating practical and user-friendly software solutions.",
+    img: todo,
+    languages: [
+      "React",
+      "NodeJs",
+      "ExpressJs",
+      "PostgresSQL",
+      "Bootstrap",
+      "Render",
+      "Netlify",
+      "States & Props",
+      "Hooks",
+    ],
+    gitpage: "https://github.com/Babina081/pern-todo",
+    demo: "https://65b0b4260badb2000845982b--pern-todo-102.netlify.app/",
+  },
+  {
+    id: 6,
     title: "Contact Manager",
     description:
       "The Contact Manager project is a comprehensive application designed to streamline and organize the management of personal and professional contacts. It serves as a centralized hub for storing, retrieving, and updating contact information, providing users with a user-friendly interface to efficiently manage their network.",
