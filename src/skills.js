@@ -44,6 +44,11 @@ const skills = [
     name: "Canva",
     skill: 60,
   },
+   {
+    id: 10,
+    name: "Learn HTML5 and CSS3 From Scratch - Full Course",
+    skill: "freecodecamp",
+  },
 ];
 
 const backend_skills = [
