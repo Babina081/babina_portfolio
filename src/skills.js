@@ -46,8 +46,8 @@ const skills = [
   },
    {
     id: 10,
-    name: "Learn HTML5 and CSS3 From Scratch - Full Course",
-    skill: "freecodecamp",
+    name: "Learn HTML5 and CSS3 From Scratch - Full Course- freecodecamp",
+    skill: 100,
   },
 ];
 
