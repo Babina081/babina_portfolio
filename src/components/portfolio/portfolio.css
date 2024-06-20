@@ -128,7 +128,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   max-width: 100%; /* Ensure the image doesn't exceed its original size */
   max-height: 100%; /* Ensure the image doesn't exceed its original size */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  object-fit:contain; /* Maintain aspect ratio while covering the container */
 }
 
 .portfolio__group2 {
@@ -157,10 +157,40 @@
 
 .language__info {
   display: grid;
-  grid-template-columns: repeat(4, 140px);
+  grid-template-columns: repeat(3, 140px);
   gap: 0.5rem;
   margin-bottom: 2rem;
+justify-content: center;
 }
+
+.language__box:hover{
+  background-color: #ea3c;
+  box-shadow: 
+    0 0 2px 0 rgba(238, 170, 51, 0.1), 
+    0 0 4px 0 rgba(238, 170, 51, 0.2), 
+    0 0 6px 0 rgba(238, 170, 51, 0.3), 
+    0 0 8px 0 rgba(238, 170, 51, 0.4),
+    0 0 12px 0 rgba(238, 170, 51, 0.5), 
+    0 0 18px 0 rgba(238, 170, 51, 0.6),
+    0 0 4px 0 rgba(238, 170, 51, 0.7);
+ 
+
+}
+
+@keyframes animate {
+  0% {
+    transform: 
+      translate(-50%, -75%) 
+      rotate(0deg);
+  }
+  100% {
+    transform: 
+      translate(-50%, -75%) 
+      rotate(360deg);
+  }
+}
+
+
 .language__title {
   background-color: white;
   color: var(--color-primary);
@@ -223,6 +253,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 } */
+
+@media screen and (max-width: 1200px) {
+  .language__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /* Media Query for Small Devices */
 @media screen and (max-width: 768px) {
