@@ -44,21 +44,7 @@ const skills = [
     name: "Canva",
     skill: 60,
   },
-   {
-    id: 10,
-    name: "Learn HTML5 and CSS3 From Scratch - Full Course- freecodecamp",
-    skill: 100,
-  },
-    {
-    id: 10,
-    name: "The Complete 2024 Web Development Bootcamp- Dr Angela Yu",
-    skill: 100,
-  },
-   {
-    id: 10,
-    name: "Motion Design for the Web- envato-tuts+",
-    skill: 100,
-  },
+ 
 ];
 
 const backend_skills = [
