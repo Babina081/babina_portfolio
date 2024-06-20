@@ -11,6 +11,8 @@ import Footer from './components/footer/Footer';
 import Academic from './components/academic/Academic';
 import Toggle from './components/toggle/Toggle';
 import { ThemeContext } from './context';
+import Learning from './components/Learning/Learning';
+import Courses from './components/Courses/Courses';
 // import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
@@ -29,6 +31,8 @@ const App = () => {
       <Nav></Nav>
       <About></About>
       <Experience></Experience>
+      <Learning></Learning>
+      <Courses></Courses>
       {/* <Services></Services> */}
       <Academic></Academic>
       <Portfolio></Portfolio>
