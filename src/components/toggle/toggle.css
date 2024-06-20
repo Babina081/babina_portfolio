@@ -60,4 +60,13 @@
     top: 15px;
     right: 15px;
   }
+
+  .switch{
+    width: 60px;
+    height: 40px;
+  }
+  .handle{
+    width: 20px;
+    height: 20px;
+  }
 }
