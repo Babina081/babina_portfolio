@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import './about.css';
-import me from '../../assets/prof.jpeg';
+import me from '../../assets/me-pic.png';
+// import me from '../../assets/prof.jpeg';
 import { ThemeContext } from '../../context';
 
 // import { PiCaretDoubleDownBold } from 'react-icons/pi';
