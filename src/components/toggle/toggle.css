@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 
-.switch[data-isOn="true"] {
+.switch[data-ison="true"] {
   justify-content: flex-end;
   background: var(--color-primary);
   opacity: 0.5; 
