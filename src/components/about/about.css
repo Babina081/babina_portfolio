@@ -33,10 +33,13 @@
 
 .about__me-image {
   border-radius: 2rem;
+  /* border-top-right-radius: 40%;
+  border-top-left-radius: 40%; */
   height: 30rem;
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
+  object-fit:cover;
 }
 
 .about__me-image:hover {
