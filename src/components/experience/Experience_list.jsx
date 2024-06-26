@@ -7,7 +7,7 @@ const ExperienceList = (props) => {
     <article className="experience__details">
       <div className="experience__detail">
         <p>
-          <BsPatchCheckFill classname="experience__details-icon" /> {props.name}
+          <BsPatchCheckFill className="experience__details-icon" /> {props.name}
         </p>
         {/* <small className="text-light">{props.skill}%</small> */}
       </div>
