@@ -2,8 +2,9 @@ import React from "react";
 import "./experience.css";
 // import { BsPatchCheckFill } from 'react-icons/bs';
 // import { PiCaretDoubleDownBold } from 'react-icons/pi';
-import { skills, backend_skills } from "../../skills";
+import { skills, backend_skills } from "../../data/skills";
 import ExperienceList from "./Experience_list";
+import { TechCarousel } from "./tech-carousel";
 
 const Experience = () => {
   return (
@@ -33,7 +34,7 @@ const Experience = () => {
             {/* <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" /> HTML
+                  <BsPatchCheckFill className="experience__details-icon" /> HTML
                 </p>
                 <small className="text-light">90%</small>
               </div>
@@ -44,7 +45,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" /> CSS
+                  <BsPatchCheckFill className="experience__details-icon" /> CSS
                 </p>
                 <small className="text-light">90%</small>
               </div>
@@ -55,7 +56,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" />{' '}
+                  <BsPatchCheckFill className="experience__details-icon" />{' '}
                   JavaScript
                 </p>
                 <small className="text-light">60%</small>
@@ -67,7 +68,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" />{' '}
+                  <BsPatchCheckFill className="experience__details-icon" />{' '}
                   Bootstrap
                 </p>
                 <small className="text-light">50%</small>
@@ -79,7 +80,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" />{' '}
+                  <BsPatchCheckFill className="experience__details-icon" />{' '}
                   Tailwind
                 </p>
                 <small className="text-light">40%</small>
@@ -91,7 +92,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" />{' '}
+                  <BsPatchCheckFill className="experience__details-icon" />{' '}
                   React
                 </p>
                 <small className="text-light">70%</small>
@@ -122,7 +123,7 @@ const Experience = () => {
             {/* <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" /> Node
+                  <BsPatchCheckFill className="experience__details-icon" /> Node
                   JS
                 </p>
                 <small className="text-light">20%</small>
@@ -134,7 +135,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" />{' '}
+                  <BsPatchCheckFill className="experience__details-icon" />{' '}
                   MongoDB
                 </p>
                 <small className="text-light">20%</small>
@@ -146,7 +147,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" /> PHP
+                  <BsPatchCheckFill className="experience__details-icon" /> PHP
                 </p>
                 <small className="text-light">40%</small>
               </div>
@@ -157,7 +158,7 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__detail">
                 <p>
-                  <BsPatchCheckFill classname="experience__details-icon" />{' '}
+                  <BsPatchCheckFill className="experience__details-icon" />{' '}
                   ExpressJS
                 </p>
                 <small className="text-light">30%</small>
@@ -168,8 +169,40 @@ const Experience = () => {
             </article> */}
           </div>
         </div>
+
         {/* end of backend */}
       </div>
+      <div
+        className="container"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "20px",
+          height: "160px",
+          padding: "2px",
+          margin: "auto",
+          marginTop: "40px",
+          overflowX: "scroll",
+        }}
+      >
+        {skills.map((skill) => {
+          return (
+            <div key={skill.id} className="skill-icon">
+              <img
+                src={skill.img}
+                alt={skill.name}
+                style={{
+                  height: "140px",
+                  width: "140px",
+                  objectFit: "contain",
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <TechCarousel />
     </section>
   );
 };
