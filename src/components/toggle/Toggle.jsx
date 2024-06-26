@@ -34,7 +34,7 @@ const Toggle = () => {
     //   ></div>
     // </div>
     <div className="t">
-      <div className="switch " data-isOn={isOn} onClick={toggleSwitch}>
+      <div className="switch " data-ison={isOn} onClick={toggleSwitch}>
         <motion.div className="handle" layout transition={spring} />
       </div>
     </div>
