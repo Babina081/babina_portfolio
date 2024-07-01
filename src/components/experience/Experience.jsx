@@ -4,11 +4,15 @@ import "./experience.css";
 // import { PiCaretDoubleDownBold } from 'react-icons/pi';
 import { skills, backend_skills } from "../../data/skills";
 import ExperienceList from "./Experience_list";
-import { TechCarousel } from "./tech-carousel";
+import { TechCarousel } from "./TechCarousel";
 
 const Experience = () => {
   return (
     <section id="experience">
+      <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="30" pathLength="1" class="bg" />
+        <circle cx="50" cy="50" r="30" pathLength="1" class="indicator" />
+      </svg>
       <div className="a">
         <h5>What Skill I Am Equipped With</h5>
         <h2>MY SKILLS</h2>
@@ -31,76 +35,6 @@ const Experience = () => {
                 />
               );
             })}
-            {/* <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" /> HTML
-                </p>
-                <small className="text-light">90%</small>
-              </div>
-              <div className="progress-line" data-percent="90%">
-                <span style={{ width: '90%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" /> CSS
-                </p>
-                <small className="text-light">90%</small>
-              </div>
-              <div className="progress-line" data-percent="90%">
-                <span style={{ width: '90%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" />{' '}
-                  JavaScript
-                </p>
-                <small className="text-light">60%</small>
-              </div>
-              <div className="progress-line" data-percent="60%">
-                <span style={{ width: '60%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" />{' '}
-                  Bootstrap
-                </p>
-                <small className="text-light">50%</small>
-              </div>
-              <div className="progress-line" data-percent="50%">
-                <span style={{ width: '50%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" />{' '}
-                  Tailwind
-                </p>
-                <small className="text-light">40%</small>
-              </div>
-              <div className="progress-line" data-percent="40%">
-                <span style={{ width: '40%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" />{' '}
-                  React
-                </p>
-                <small className="text-light">70%</small>
-              </div>
-              <div className="progress-line" data-percent="70%">
-                <span style={{ width: '70%' }}></span>
-              </div>
-            </article> */}
           </div>
         </div>
         {/* end of frontend */}
@@ -120,53 +54,6 @@ const Experience = () => {
                 />
               );
             })}
-            {/* <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" /> Node
-                  JS
-                </p>
-                <small className="text-light">20%</small>
-              </div>
-              <div className="progress-line" data-percent="20%">
-                <span style={{ width: '20%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" />{' '}
-                  MongoDB
-                </p>
-                <small className="text-light">20%</small>
-              </div>
-              <div className="progress-line" data-percent="20%">
-                <span style={{ width: '20%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" /> PHP
-                </p>
-                <small className="text-light">40%</small>
-              </div>
-              <div className="progress-line" data-percent="40%">
-                <span style={{ width: '40%' }}></span>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div className="experience__detail">
-                <p>
-                  <BsPatchCheckFill className="experience__details-icon" />{' '}
-                  ExpressJS
-                </p>
-                <small className="text-light">30%</small>
-              </div>
-              <div className="progress-line" data-percent="30%">
-                <span style={{ width: '30%' }}></span>
-              </div>
-            </article> */}
           </div>
         </div>
 
