@@ -15,6 +15,7 @@ import Learning from "./components/Learning/Learning";
 import Courses from "./components/Courses/Courses";
 // import { BrowserRouter } from 'react-router-dom';
 import { scroll } from "framer-motion";
+import ScrollTriggerExp from "./components/gsapscroller/ScrollTriggerExp";
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -51,6 +52,7 @@ const App = () => {
       <Header></Header>
       <Nav></Nav>
       <About></About>
+      <ScrollTriggerExp />
       <Experience></Experience>
       <Learning></Learning>
       <Courses></Courses>
