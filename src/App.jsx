@@ -16,6 +16,10 @@ import Courses from "./components/Courses/Courses";
 // import { BrowserRouter } from 'react-router-dom';
 import { scroll } from "framer-motion";
 import ScrollTriggerExp from "./components/gsapscroller/ScrollTriggerExp";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+import ScrollPanelExp from "./components/gsapscroll/ScrollPanelExp";
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -52,7 +56,13 @@ const App = () => {
       <Header></Header>
       <Nav></Nav>
       <About></About>
-      <ScrollTriggerExp />
+      <div>
+        <ScrollPanelExp />
+      </div>
+      <div>
+        <ScrollTriggerExp />
+      </div>
+
       <Experience></Experience>
       <Learning></Learning>
       <Courses></Courses>
